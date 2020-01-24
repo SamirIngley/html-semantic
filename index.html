@@ -30,8 +30,10 @@ header -> navbar, main, footer-->
 
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
     <head>
+        <meta charset="UTF-8">
         <title>Samir.</title>
     </head>
     <body>
@@ -50,14 +52,12 @@ header -> navbar, main, footer-->
         <h2><b>Data Science</b> at Make School</h2>
         <br>
         <figure>
-            <a href="images/prof_pic.jpeg">
-                <img src="images/prof_pic.jpeg" alt="samir-profile-pic"> 
-                <figcaption>Samir Ingle headshot</figcaption>
-            </a>
+            <img src="images/prof_pic.jpeg" alt="samir-profile-pic"> 
+            <figcaption>Samir Ingle headshot</figcaption>
         </figure>
         
-        
         <article>
+            <h3>Bio</h3>
             <p>
             22 year old Bay Area native.  
             <br>
@@ -94,6 +94,7 @@ header -> navbar, main, footer-->
             My Links:
             <br>
             <a href="https://github.com/SamirIngley">Github</a>
+            <a href="https://medium.com/@SamirIngle">Medium</a>
             <a href="https://www.linkedin.com/in/samiringle/">LinkedIn</a>
         </footer>
 
@@ -104,26 +105,42 @@ header -> navbar, main, footer-->
         <form action="process.php" method="POST">
             <div>
                 <label>First Name</label><br>
-                <input type="text" name="firstName">
+                <input type="text" name="firstName" placeholder="John">
             </div>
             <br>
             <div>
                 <label>Last Name</label><br>
-                <input type="text" name="lastName">
+                <input type="text" name="lastName" placeholder="Doe">
             </div>
             <br>
             <div>
                 <label>Email</label><br>
-                <input type="email" name="email">
+                <input type="email" name="email" placeholder="email@me.com">
             </div>
             <br>
             <div>
                 <label>Message</label><br>
-                <textarea name="message" placeholder="Such a cool website"></textarea>
+                <textarea name="message" placeholder="Such cool projects"></textarea>
             </div>
             <br>
+            <div>
+                <label>Urgent?<br>
+                    <input type="radio" name="urgent" value="true"> Yes<br>
+                    <input type="radio" name="urgent" value="false" checked> No<br>
+                </label>
+            </div>
             <br>
+            <div>
+                <label>
+                    <input type="checkbox" name="Subscribe for updates" value="subscribe"> Subscribe for new blog updates!<br>
+                </label>
+            </div>
+            <br>
+            <div>
                 <input type="submit" name="submit" value="Submit">
+            </div>
+
+
         </form>
         <br>
         
