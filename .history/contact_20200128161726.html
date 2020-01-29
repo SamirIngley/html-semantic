@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+</head>
+<body>
+<h1>Contact Me</h1>
+<form action="process.php" method="POST">
+        <div>
+            <label>First Name</label><br>
+            <input type="text" name="firstName" placeholder="John">
+        </div>
+        <br>
+        <div>
+            <label>Last Name</label><br>
+            <input type="text" name="lastName" placeholder="Doe">
+        </div>
+        <br>
+        <div>
+            <label>Email</label><br>
+            <input type="email" name="email" placeholder="email@me.com">
+        </div>
+        <br>
+        <div>
+            <label>Message</label><br>
+            <textarea name="message" placeholder="Such cool projects"></textarea>
+        </div>
+        <br>
+        <div>
+
+                Urgent?<br>
+            <label>
+                <input type="radio" name="urgent" value="true"> 
+                Yes
+             </label><br>
+               
+                <label>
+                     <input type="radio" name="urgent" value="false" checked>
+                      No<br>
+                </label>
+           
+        </div>
+        <br>
+        <div>
+            <label>
+                <input type="checkbox" name="Subscribe for updates" value="subscribe"> Subscribe for new blog updates!<br>
+            </label>
+        </div>
+        <br>
+        <div>
+            <input type="submit" name="submit" value="Submit">
+        </div>
+</form>
+</body>
+
+</html>

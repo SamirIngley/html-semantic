@@ -1,0 +1,28 @@
+ nav {
+                background-color: rgba(215, 176, 251, 0.287);
+            }
+            nav a {
+                color: black;
+                text-align: center;
+                font-size: 1em;
+            }
+            nav a:hover{
+                color: purple;
+            }
+            nav a.active {
+                background-color: orange;
+                color: purple;
+            }
+
+
+nav > ul {
+    display: flex;
+}
+
+nav > ul > li {
+    padding: 1em;
+}
+
+nav a {
+    text-decoration: none;
+}

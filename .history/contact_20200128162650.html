@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+    <h1>Samir Ingle</h1>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+                </ul>
+        </nav>
+        <style>
+        nav {
+            background-color: black;
+        }
+        nav a {
+            float: left;
+            color: yellow;
+            text-align: center;
+            font-size: 2em;
+        }
+        </style>
+    </header>
+
+
+<h1>Contact Me</h1>
+<br>
+<br>
+<form action="process.php" method="POST">
+        <div>
+            <label>First Name</label><br>
+            <input type="text" name="firstName" placeholder="John">
+        </div>
+        <br>
+        <br>
+
+        <div>
+            <label>Last Name</label><br>
+            <input type="text" name="lastName" placeholder="Doe">
+        </div>
+        <br>
+        <br>
+
+        <div>
+            <label>Email</label><br>
+            <input type="email" name="email" placeholder="email@me.com">
+        </div>
+        <br>
+        <br>
+        <div>
+            <label>Message</label><br>
+            <textarea name="message" placeholder="Such cool projects"></textarea>
+        </div>
+        <br>
+        <br>
+        <div>
+
+                Urgent?<br>
+            <label>
+                <input type="radio" name="urgent" value="true"> 
+                Yes
+             </label><br>
+               
+                <label>
+                     <input type="radio" name="urgent" value="false" checked>
+                      No<br>
+                </label>
+           
+        </div>
+        <br>
+        <br>
+        <div>
+            <label>
+                <input type="checkbox" name="Subscribe for updates" value="subscribe"> Subscribe for new blog updates!<br>
+            </label>
+        </div>
+        <br>
+        <div>
+            <input type="submit" name="submit" value="Submit">
+        </div>
+</form>
+</body>
+<br>
+<hr>
+<br>
+
+
+<footer>
+    My Links:
+    <br>
+    <a href="https://github.com/SamirIngley">Github</a>
+    <a href="https://medium.com/@SamirIngle">Medium</a>
+    <a href="https://www.linkedin.com/in/samiringle/">LinkedIn</a>
+</footer>
+
+</html>

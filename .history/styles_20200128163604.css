@@ -1,0 +1,26 @@
+ nav {
+                background-color: black;
+            }
+            nav a {
+                float: left;
+                color: yellow;
+                text-align: center;
+                font-size: 1em;
+            }
+            nav a:hover{
+                background-color: purple;
+                color: green;
+            }
+            nav a.active {
+                background-color: orange;
+                color: purple;
+            }
+
+
+nav > ul {
+    display: flex;
+}
+
+nav > ul > li {
+    padding: 1em;
+}
