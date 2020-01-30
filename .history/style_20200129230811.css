@@ -31,14 +31,18 @@ nav a.active {
 }
 
 
-nav {
+nav > ul {
     display: flex;
     justify-content: flex-end;
     list-style: none;
 }
 
-nav {
+nav > ul > li {
     padding: 1em;
+}
+
+nav {
+    padding: 0 1em;
 }
 
 

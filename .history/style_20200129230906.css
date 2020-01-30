@@ -41,6 +41,10 @@ nav {
     padding: 1em;
 }
 
+nav {
+    padding: 0 1em;
+}
+
 
 <style>
 body {
