@@ -1,0 +1,213 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 20px;
+  background-color:rgb(0, 0, 0);
+  color: white;
+  font-family: Helvetica;
+}  
+
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 300px;
+    /* 
+    The named areas below define where elements with
+    those names are placed on the grid. 
+    */
+    grid-template-areas:  "h h h r"
+                          "s m m p" 
+                          "f . . .";
+  }
+  
+.wrapper>div {
+  color: white;
+  font-family: Helvetica;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 00px; */
+}
+
+.header {
+  /* Name this element to place it on the grid */
+  grid-area: h;
+}
+
+.header-right {
+  grid-area: r;
+}
+.photo {
+  grid-area: p
+
+}
+.main-content {
+  grid-area: m;
+}
+
+.side-bar {
+  grid-area: s;
+}
+
+.footer {
+  grid-area: f;
+}
+
+.footer-right {
+  grid-area: g;
+}
+
+.wrapper>div:nth-child(1) {
+  background-color: #97edab
+}
+
+.wrapper>div:nth-child(2) {
+  background-color: #e5db8e
+}
+
+.wrapper>div:nth-child(3) {
+  background-color: #97dced
+}
+
+.wrapper>div:nth-child(4) {
+  background-color: #97a1ed
+}
+
+.wrapper>div:nth-child(5) {
+  background-color: #b597ed
+}
+
+.wrapper>div:nth-child(6) {
+  background-color: #ed979e
+}
+
+
+
+/* ----- Bio ----- */
+
+.bio ul {
+  list-style: none;
+}
+
+
+
+/* ----- Nav ----- */
+nav {
+  background-color: rgba(215, 176, 251, 0);
+  /* font-weight:bold; */
+}
+
+
+nav a {
+  color: white;
+  text-align: right;
+  font-size: 2vw;
+  text-decoration: none;
+}
+
+nav a:hover{
+  color: lime;
+}
+
+nav a.active {
+  background-color: orange;
+  color: purple;
+}
+
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+} */
+/* 
+nav {
+    padding: 1em;
+} */
+
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(226, 226, 226);
+}
+
+.topnav a {
+  float: right;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 3px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: lime;
+  color: white;
+}
+
+
+/* -------- Drop Down -------- */
+
+.dropbtn {
+  background-color: rgba(247, 246, 246, 0);
+  color: white;
+  /* padding: 60px; */
+  padding: 10px 0px 50px 100px;
+
+  font-size: 5em;
+  border: 1px;
+  cursor: pointer;
+}
+
+.dropbtn:hover {
+  color: lime;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+
+  right: 0;
+  background-color: #6f6f6f00;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 100px 100px 100 100px;
+  text-decoration: none;
+  display: block;
+  font-size: 13em;
+
+}
+
+.dropdown-content a:hover {background-color: #00000000;}
+
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #000000;}
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <center><title>Samir Ingle</title></center>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<div class="wrapper">
+
+    <div class="header">
+        <div>
+            <h1>
+                Samir Ingle
+            </h1>
+        </div>
+    </div>
+    
+    <div class="header-right">
+        <div>
+        <nav>
+            <div class='dropdown'>
+                <button class='dropbtn'>pages</button>
+                <div class="dropdown-content">
+                    <a href="/about">about</a>
+                    <a href="/projects">projects</a>
+                    <a href="/contact">contact</a>
+                </div>
+            </div>
+        </nav> 
+        </div>
+    </div>
+    
+    <div class="side-bar">
+        <div><img src="static/images/8-bit.png" alt="samir-profile-pic" style="width:136%;"></div>
+    </div>
+    
+    <div class="main-content">
+        <div><form action="process.php" method="POST">
+            <div>
+                <label>First Name</label><br>
+                <input type="text" name="firstName" placeholder="John">
+            </div>
+            <br>
+            <br>
+    
+            <div>
+                <label>Last Name</label><br>
+                <input type="text" name="lastName" placeholder="Doe">
+            </div>
+            <br>
+            <br>
+    
+            <div>
+                <label>Email</label><br>
+                <input type="email" name="email" placeholder="email@me.com">
+            </div>
+            <br>
+            <br>
+            <div>
+                <label>Message</label><br>
+                <textarea name="message" placeholder="Such cool projects"></textarea>
+            </div>
+            <br>
+            <br>
+            <div>
+    
+                    Urgent?<br>
+                    <br>
+                <label>
+                    <input type="radio" name="urgent" value="true"> 
+                    Yes
+                    </label><br>
+                    
+                    <label>
+                            <input type="radio" name="urgent" value="false" checked>
+                            No<br>
+                    </label>
+                
+            </div>
+            <br>
+            <br>
+            <div>
+                <label>
+                    <input type="checkbox" name="Subscribe for updates" value="subscribe"> Subscribe for new blog updates!<br>
+                </label>
+            </div>
+            <br>
+            <div>
+                <input type="submit" name="submit" value="Submit">
+            </div>
+        </form></div>
+    </div>
+    
+    <div class="footer">
+        <div><a href="https://github.com/SamirIngley">Github</a>
+            <a href="https://medium.com/@SamirIngle">Medium</a>
+            <a href="https://www.linkedin.com/in/samiringle/">LinkedIn</a>
+        </div>
+    </div>
+    
+    <div class="footer-right">
+        <div>fr</div>
+    </div>
+    
+</div>
+<br>
+<br>
+
+</html>
