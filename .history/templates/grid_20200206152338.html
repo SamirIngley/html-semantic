@@ -4,11 +4,13 @@
  -->
 <div class="wrapper">
 
-  
+  <meta
+    name="viewport"
+    content= ‘width=device-width, initial-scale=1.0, maximum-scale=1.0’
+  />
 
   <div class="header">
     <div>head</div>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   </div>
 
   <div class="header-right">
@@ -16,7 +18,7 @@
   </div>
 
   <div class="main-content">
-    <!-- <div><img src="static/images/8-bit.png" alt="samir-profile-pic" style="width:136%;"></div> -->
+    <div><img src="static/images/8-bit.png" alt="samir-profile-pic" style="width:136%;"></div>
   </div>
 
   <div class="side-bar">
@@ -38,14 +40,14 @@
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
-    /* grid-template-rows: 300px 600px 300px; */
+    grid-template-rows: 300px 600px;
     /* 
     The named areas below define where elements with
     those names are placed on the grid. 
     */
-    grid-template-areas:  "h r"
-                          "s m" 
-                          "f g";
+    grid-template-areas:  "h h h r"
+                          "s s m m" 
+                          "f . g g";
   }
   
   .wrapper>div {
@@ -55,7 +57,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 500px;
+    /* height: 20px; */
   }
   
   .header {
@@ -113,38 +115,18 @@
         grid-gap: 10px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 300px 600px;
-        
-        grid-template-areas:  "h h"
-                              "r r" 
-                              "s s"
-                              "m m"
-                              "f g";
+        /* 
+        The named areas below define where elements with
+        those names are placed on the grid. 
+        */
+        grid-template-areas:  "h h h r"
+                              "m m m m" 
+                              "s s s s"
+                              "f f f f";
       }
-      
-    .wrapper>div {
-      color: white;
-      font-family: Helvetica;
-      padding: 1em;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 500px;
-    }
   }
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  /* @media only screen and (min-width: 600px) {
-    .wrapper {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 300px 600px;
-        
-        grid-template-areas:  "h h"
-                              "r r" 
-                              "s s"
-                              "f g";
-    }
-  } */
+  @media only screen and (min-width: 600px) {...}
 
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {...}

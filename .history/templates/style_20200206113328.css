@@ -28,18 +28,18 @@ body {
 .wrapper {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 300px 600px 200px;
   /* 
   The named areas below define where elements with
   those names are placed on the grid. 
   */
-  grid-template-areas:  "h h r"
+  grid-template-areas:  "h r ."
                         "m s s" 
                         "f g .";
 }
 
-.wrapper > div {
+.wrapper>div {
   color: white;
   font-family: Helvetica;
   padding: 1em;
@@ -57,8 +57,6 @@ body {
 }
 
 .drop-btn {
-  text-align: center;
-  padding: 100px 100px 100px 100px;
   grid-area: r;
 }
 
@@ -75,7 +73,7 @@ body {
 
 .footer {
   grid-area: f;
-  background-color: rgba(255, 241, 241, 0.452);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .footer-right {
@@ -117,11 +115,14 @@ nav a.active {
   color: purple;
 }
 
+
 nav {
   display: flex;
   justify-content: flex-end;
   list-style: none;
 } 
+
+
 
 .topnav {
   overflow: hidden;
@@ -154,9 +155,9 @@ nav {
   background-color: rgba(247, 246, 246, 0);
   color: white;
   /* padding: 60px; */
-  /* padding: 10px 20px 50px 30px; */
+  padding: 10px 0px 50px 10px;
 
-  font-size: 3em;
+  font-size: 5em;
   border: 1px;
   cursor: pointer;
 }
@@ -164,17 +165,19 @@ nav {
 .dropbtn:hover {
   color: lime;
   background-color: rgba(247, 246, 246, 0);
+
+
 }
 
 .dropdown {
-  position: relative;
+  position: center;
   display: inline-block;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  padding: 50px;
+  padding: 0px;
   border: 0px;
   margin: 0px;
 
@@ -187,10 +190,11 @@ nav {
 
 .dropdown-content a {
   color: white;
-  padding: 20px 20px 20px 20px;
+  padding: 100px 100px 100 100px;
   text-decoration: none;
   display: block;
   font-size: 5em;
+
 } 
 
 .dropdown-content a:hover {background-color: #00000000;}
@@ -198,25 +202,3 @@ nav {
 .dropdown:hover .dropdown-content {display: block;}
 .dropdown:hover .dropbtn {background-color: #000000;}
 
-div.footer {
-  /* margin: 2em; */
-
-  width: 80%;
-  padding: 1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* height: 100px; */
-}
-
-.footer > a {  
-  width: 60px;
-  height: 60px;
-  display: block;
-  margin: 5px;
-}
-
-.footer > a > img {
-  width: 100%;
-  height: auto;
-}

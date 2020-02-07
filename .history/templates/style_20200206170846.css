@@ -36,7 +36,7 @@ body {
   */
   grid-template-areas:  "h h r"
                         "m s s" 
-                        "f g .";
+                        "f . .";
 }
 
 .wrapper > div {
