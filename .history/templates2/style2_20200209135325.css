@@ -1,0 +1,53 @@
+body {
+    background-color: wheat;
+}
+.wrapper {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-areas: "n . . p"
+                         ". b b ."
+                         ". s s ."
+                         ". s s ."
+                         ". j j ."
+                         ". c c ."
+}
+
+.wrapper>div {
+    display: flex;
+    font-family: nimbus-sans,Helvetica,Arial, Helvetica, sans-serif;
+    padding: 10px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+
+.name {
+    grid-area: n;
+    /* padding: */
+}
+
+.pages {
+    grid-area: p;
+}
+
+.bio {
+    grid-area: b;
+    justify-content: flex-start;
+    padding: 50px;
+}
+
+.skills {
+    grid-area: s;
+}
+
+.projects {
+    grid-area: j;
+}
+
+.contact {
+    grid-area: c;
+}

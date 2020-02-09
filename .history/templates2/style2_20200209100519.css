@@ -1,0 +1,13 @@
+
+.body {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-areas: "t h h n"
+                         ". b b ."
+                         ". b b ."
+                         ". l l ."
+}
+
+

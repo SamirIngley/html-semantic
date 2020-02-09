@@ -1,0 +1,45 @@
+body {
+    background-color: wheat;
+}
+.wrapper {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-areas: "n n . ."
+                         ". b b ."
+                         ". s s ."
+                         ". s s ."
+                         ". p p ."
+                         ". c c ."
+}
+
+.wrapper>div {
+    display: flex;
+    font-family: Helvetica;
+    padding: 100px;
+    font-size: 20px;
+    justify-content: center;
+    height: 100px;
+}
+
+.name {
+    grid-area: n;
+    /* padding: */
+}
+
+.bio {
+    grid-area: b;
+}
+
+.skills {
+    grid-area: s;
+}
+
+.projects {
+    grid-area: p;
+}
+
+.contact {
+    grid-area: c;
+}

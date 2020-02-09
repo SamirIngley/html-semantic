@@ -1,0 +1,33 @@
+body {
+    background-color: wheat;
+}
+.wrapper {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-template-areas: "n . . ."
+                         ". b b ."
+                         ". s s ."
+                         ". c c ."
+}
+
+.wrapper>div {
+
+}
+
+.name {
+    grid-area: n;
+}
+
+.bio {
+    grid-area: b;
+}
+
+.skills {
+    grid-area: s;
+}
+
+.contact {
+    grid-area: c;
+}
