@@ -8,6 +8,7 @@ body {
     grid-template-areas: "n . p"
                          ". b ."
                          ". s ."
+                         ". s ."
                          ". j ."
                          ". c ."
                          ". f ."
@@ -16,7 +17,7 @@ body {
 .wrapper>div {
     display: flex;
     font-family: nimbus-sans,Helvetica,Arial, Helvetica, sans-serif;
-    padding: 40px;
+    padding: 10px;
     font-size: 20px;
     justify-content: center;
     align-items: center;
@@ -50,30 +51,19 @@ body {
 
 .projects {
     grid-area: j;
-    height: 1000px !important;
+    height: 800px !important;
     font-size: 60px !important;
 }
 
 .contact {
     grid-area: c;
-    text-align: center;
     height: 800px !important;
     font-size: 60px !important;
 }
 
 .footer {
     grid-area: f;
+    display: flex;
+    justify-content: space-between;
+    
 }
-
-
-.footer > a {  
-    width: 60px;
-    height: 60px;
-    display: block;
-    margin: 20px;
-  }
-  
-  .footer > a > img {
-    width: 100%;
-    height: auto;
-  }

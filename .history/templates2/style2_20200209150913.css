@@ -56,7 +56,6 @@ body {
 
 .contact {
     grid-area: c;
-    text-align: center;
     height: 800px !important;
     font-size: 60px !important;
 }

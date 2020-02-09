@@ -8,6 +8,7 @@ body {
     grid-template-areas: "n . p"
                          ". b ."
                          ". s ."
+                         ". s ."
                          ". j ."
                          ". c ."
                          ". f ."
@@ -50,13 +51,12 @@ body {
 
 .projects {
     grid-area: j;
-    height: 1000px !important;
+    height: 100px !important;
     font-size: 60px !important;
 }
 
 .contact {
     grid-area: c;
-    text-align: center;
     height: 800px !important;
     font-size: 60px !important;
 }
