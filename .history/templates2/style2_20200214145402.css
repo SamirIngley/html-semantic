@@ -68,6 +68,10 @@ body {
     font-size: 60px !important;
 }
 
+.wrapper .contact > form >h2 {
+    padding: 10px !important;
+}
+
 .footer {
     grid-area: f;
 }

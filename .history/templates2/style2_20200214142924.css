@@ -31,13 +31,8 @@ body {
 
 .pages {
     grid-area: p;
-}
-
-.pages > a {
-    padding: 15px;
     text-decoration: none;
-    color: gray;
-    font-size: 25px;
+    color: blue;
 }
 
 .bio {
@@ -78,14 +73,13 @@ body {
     height: 60px;
     display: block;
     margin: 20px;
-}
-
-.footer > a > img {
-width: 100%;
-height: auto;
-}
-
-.footer > a:nth-child(3) {
-    width:68px;
+  }
+  
+  .footer > a > img {
+    width: 100%;
     height: auto;
-}
+  }
+
+  .checkbox {
+      font-size: 18px !important;
+  }

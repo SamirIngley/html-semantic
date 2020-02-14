@@ -85,7 +85,9 @@ width: 100%;
 height: auto;
 }
 
-.footer > a:nth-child(3) {
-    width:68px;
+.footer > a >img:nth-child(3) {
+    width: 140%;
     height: auto;
+
+
 }

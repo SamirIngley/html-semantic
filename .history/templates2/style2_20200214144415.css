@@ -78,14 +78,11 @@ body {
     height: 60px;
     display: block;
     margin: 20px;
-}
+  }
 
 .footer > a > img {
 width: 100%;
 height: auto;
 }
 
-.footer > a:nth-child(3) {
-    width:68px;
-    height: auto;
-}
+  
