@@ -41,12 +41,12 @@ body {
 }
 
 .pages > a:link {
-    color: rgba(114, 113, 113, 0.733);
+    color: rgba(122, 122, 122, 0.63);
 }
   
 /* visited link */
 .pages > a:visited {
-    color: rgba(114, 113, 113, 0.733);
+    color: rgba(126, 126, 126, 0.548);
 }
 
 /* mouse over link */

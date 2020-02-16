@@ -34,19 +34,19 @@ body {
 }
 
 .pages > a {
-    padding: 20px;
+    padding: 15px;
     text-decoration: none;
     color: gray;
     font-size: 25px;
 }
 
 .pages > a:link {
-    color: rgba(114, 113, 113, 0.733);
+    color: rgba(122, 122, 122, 0.63);
 }
   
 /* visited link */
 .pages > a:visited {
-    color: rgba(114, 113, 113, 0.733);
+    color: rgba(126, 126, 126, 0.548);
 }
 
 /* mouse over link */
@@ -110,18 +110,21 @@ height: auto;
 }
 
 
-.footer > a > img {
+.footer > a >img:link {
     color: rgba(122, 122, 122, 0.63);
-    opacity: 0.5;
 }
   
 /* visited link */
-.footer > a > img:visited {
+.footer > a:visited {
     color: rgba(126, 126, 126, 0.548);
 }
 
 /* mouse over link */
-.footer > a > img:hover {
+.footer > a:hover {
     color: rgb(0, 0, 0);
-    opacity: 1.0;
+}
+
+/* selected link */
+.footer > a:active {
+    color: rgb(255, 255, 255);
 }
