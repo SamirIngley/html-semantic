@@ -2,7 +2,7 @@
 
 body {
     display: block;
-    background-color: rgb(252, 223, 181);
+    background-color: rgb(252, 233, 206);
     font-family: nimbus-sans,Helvetica,Arial, Helvetica, sans-serif;
 
     margin: 20px;
@@ -27,6 +27,14 @@ nav > div:nth-child(1) {
     font-size: 2em;
 }
 
+.name > a {
+    text-decoration: none;
+}
+
+.name > a:visited {
+    color:black;
+}
+
 .pages_text {
     display: flex;
     flex-direction: row;
@@ -41,29 +49,47 @@ nav > div:nth-child(1) {
 }
 
 
-.bio {
+.home {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     font-size: 4em;
-    padding-top: 500px;
+    padding-top: 300px;
     padding-left: 100px;
-    padding-bottom: 500px;
+    padding-bottom: 350px;
     padding-right: 100px;
-    height: 200px;
+    height: 400px;
 
 }
 
 
-.skills {
+.work {
     font-size: 3em;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 500px;
+    padding-top: 200px;
     padding-left: 100px;
-    padding-bottom: 500px;
+    padding-bottom: 350px;
     padding-right: 100px;
-    height: 200px;
+    height: 400px;
+}
+
+.work_text > a {
+    text-decoration: none;
+}
+
+
+.about {
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-bottom: 300px;
+    padding-right: 100px;
+    height: 500px;
 }
