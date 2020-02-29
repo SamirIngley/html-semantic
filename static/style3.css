@@ -4,10 +4,19 @@ body {
     display: block;
     background-color: rgb(252, 233, 206);
     font-family: nimbus-sans,Helvetica,Arial, Helvetica, sans-serif;
-
     margin: 20px;
 }
 
+.scroll-parent {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+
+}
+
+.scroll-parent > div {
+    scroll-snap-align: start;
+}
 
 
 /* ********** NAV BAR ************ */
@@ -23,7 +32,7 @@ nav {
     padding-right: 100px;
 }
 
-nav > div:nth-child(1) {
+nav > div > div:nth-child(1) {
     font-size: 2em;
 }
 
@@ -57,47 +66,55 @@ nav > div:nth-child(1) {
 }
 
 
+.home_page {
+}
+
+.home_text {
+    margin-right: 10%;
+}
+
 .home {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: right;
+    align-items: center;
     font-size: 4em;
-    padding-top: 300px;
-    padding-left: 100px;
-    padding-bottom: 350px;
-    padding-right: 100px;
-    height: 400px;
+    border: 3px solid;
+    margin-right: 20%;
+
+    height: 100vh;
+    width: calc(100vw - 40px);
+
 
 }
 
 
-.work {
+.work_page {
     font-size: 3em;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    text-align: center;
-    padding-top: 200px;
-    padding-left: 100px;
-    padding-bottom: 350px;
-    padding-right: 100px;
-    height: 400px;
+    
+
+    height: 100vh;
+    width: 100vw;
 }
 
 .work_text > a {
     text-decoration: none;
+    text-align: left;
 }
 
 
-.about {
+.about_page {
     font-size: 3em;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 100px;
-    padding-left: 100px;
-    padding-bottom: 300px;
-    padding-right: 100px;
-    height: 500px;
+    
+    height: 100vh;
+    width: 100vw;
 }
+
+

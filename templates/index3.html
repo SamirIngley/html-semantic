@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,78 +9,96 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <style>
-    html {
-        scroll-behavior: smooth;
-      }
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 
 </head>
+
 <body>
-   
-    <nav>
-        <div class="name">       
-            <a href="#home"><h1>Samir Ingle</h1></a>
-        </div>
-    
-        <div class="pages">
-            <div class="pages_text">
-                <a href="#work">Work</a>
-                <a href="#about">About</a>
-            </div>
+    <div class="home_page">
+
+        <div class="fade-scroll">
+            <nav>
+
+                <div data-aos="fade-up" data-aos-duration="400" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                    data-aos-anchor-placement="top-center">
+                    <div class="name">
+                        <a href="#home">
+                            <h1>Samir Ingle</h1>
+                        </a>
+                    </div>
+
+                    <div class="pages">
+                        <div class="pages_text">
+                            <a href="#work">Work</a>
+                            <a href="#about">About</a>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+
         </div>
 
-    </nav>
-
-    </div>
         <div class="fade-scroll">
             <div class="home" id="home">
-                <div data-aos="fade-in"
-                    data-aos-duration="1000"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
-                    data-aos-anchor-placement="bottom-bottom">
+                <div class="home_text" data-aos="fade-down" data-aos-duration="700" data-aos-easing="ease-in-out"
+                    data-aos-mirror="true" data-aos-anchor-placement="bottom-bottom">
                     Software Engineer.<br>
                     Concentration in Data Science. <br>
-                 </div>
-            </div>
-        </div>
-
-        <div class="fade-scroll">
-            <div class="work" id="work">
-                <div class="work_text"
-                    data-aos="fade-in"
-                    data-aos-delay="50"
-                    data-aos-duration="1500"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
-                    data-aos-anchor-placement="top-center">  
-                    <h2>Work</h2>
-                    <a href="https://markov-tweet-generator.herokuapp.com/">Tweet Generator</a>
-                    <p>Recipe Blog </p>
-                    <p>Python Django HTML CSS</p>
                 </div>
             </div>
         </div>
+
+    </div>
+
+
+
+
+
+    <div class="work_page" id="work">
+
+        <div class="work_title" data-aos="fade-right" data-aos-duration="2000">
+            <h2>Projects</h2>
+        </div>
+
+        <div class="work_text" data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000"
+            data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
+
+            <a href="https://markov-tweet-generator.herokuapp.com/">Tweet Generator</a>
+            <p>Recipe Blog </p>
+            <p>Python Django HTML CSS</p>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="about_page">
 
         <div class="fade-scroll">
             <div class="about" id="about">
-                <div data-aos="fade-in"
-                    data-aos-delay="50"
-                    data-aos-duration="1500"
-                    data-aos-easing="ease-in-out"
-                    data-aos-mirror="true"
-                    data-aos-anchor-placement="bottom-bottom">  
+                <div data-aos="fade-in" data-aos-duration="900" data-aos-easing="ease-in-out" data-aos-mirror="true"
+                    data-aos-anchor-placement="bottom-bottom">
                     <h2>About</h2>
-                    <p>Tweet Gen</p>
+                    <p>Suite boi.</p>
                 </div>
             </div>
         </div>
-    <div>
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
+    </div>
 
-  </script>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
