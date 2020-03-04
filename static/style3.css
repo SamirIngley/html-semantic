@@ -23,7 +23,7 @@ body {
 nav {
     width: calc(100% - 240px);
     position: fixed;
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: baseline;
     padding-top: 50px;
@@ -32,12 +32,16 @@ nav {
     padding-right: 100px;
 }
 
-nav > div > div:nth-child(1) {
-    font-size: 2em;
+
+.top {
+    display: flex;
+    justify-content: space-between;
 }
 
 .name > a {
     text-decoration: none;
+    font-size: 2em;
+    padding-left: 5px;
 }
 
 .name > a:link {
@@ -47,6 +51,44 @@ nav > div > div:nth-child(1) {
 .name > a:visited {
     color:black;
 }
+
+.links {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.links > a {  
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+.links > a > img {
+width: 100%;
+height: auto;
+}
+
+.links > a > :nth-child(3) {
+    padding-bottom: 5px;
+}
+
+
+.links > a > img {
+    color: rgba(122, 122, 122, 0.726);
+    opacity: 0.5;
+}
+  
+/* visited link */
+.links > a > img:visited {
+    color: rgba(126, 126, 126, 0.548);
+}
+
+/* mouse over link */
+.links > a > img:hover {
+    color: rgb(0, 0, 0);
+    opacity: 1.0;
+}
+
 
 .pages_text {
     display: flex;
