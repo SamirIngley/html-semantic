@@ -36,12 +36,12 @@ nav {
 .top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .name > a {
     text-decoration: none;
     font-size: 2em;
-    padding-left: 5px;
 }
 
 .name > a:link {
@@ -55,36 +55,38 @@ nav {
 .links {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 }
 
-.links > a {  
+.links > div {  
     width: 30px;
     height: 30px;
-    margin: 5px;
+    margin-left: 25px;
 }
 
-.links > a > img {
+.links > div > a > img {
 width: 100%;
 height: auto;
 }
 
-.links > a > :nth-child(3) {
+
+.links > div > a > :nth-child(3) {
     padding-bottom: 5px;
 }
 
 
-.links > a > img {
+.links > div > a > img {
     color: rgba(122, 122, 122, 0.726);
     opacity: 0.5;
 }
   
 /* visited link */
-.links > a > img:visited {
+.links > div > a > img:visited {
     color: rgba(126, 126, 126, 0.548);
 }
 
 /* mouse over link */
-.links > a > img:hover {
+.links > div > a > img:hover {
     color: rgb(0, 0, 0);
     opacity: 1.0;
 }
