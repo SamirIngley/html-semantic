@@ -22,7 +22,6 @@
         <nav>
             <div class="top">
                 <div class="name">
-                    <a href="#home"><h1>Samir Ingle</h1></a>
                 </div>
                 <div class="pages">
                     <div class="pages_text">
@@ -34,22 +33,25 @@
 
             
             <div class="links">
-                <div class="github"><a href="https://github.com/SamirIngley"><img src="static/images/iconmonstr_png/iconmonstr-github-1-240.png"></a></div>
-                <div class="medium"><a href="https://medium.com/@SamirIngle"><img src="static/images/iconmonstr_png/iconmonstr-medium-1-240.png"></a></div>
-                <div class="linkedin"><a href="https://www.linkedin.com/in/samiringle/"><img src="static/images/iconmonstr_png/iconmonstr-linkedin-1-240.png"></a></div>
-                <div class="twitter"><a href="https://twitter.com/samirngle"><img src="static/images/iconmonstr_png/iconmonstr-twitter-1-240.png"></a></div>
+                <div class="github" data-aos="fade-down" data-aos-delay="250" data-aos-duration="900"
+                data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center"><a href="https://github.com/SamirIngley"><img src="static/images/iconmonstr_png/iconmonstr-github-1-240.png"></a></div>
+                <div class="medium" data-aos="fade-up" data-aos-delay="350" data-aos-duration="700"
+                data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center"><a href="https://medium.com/@SamirIngle"><img src="static/images/iconmonstr_png/iconmonstr-medium-1-240.png"></a></div>
+                <div class="linkedin" data-aos="fade-down" data-aos-delay="10" data-aos-duration="800"
+                data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center"><a href="https://www.linkedin.com/in/samiringle/"><img src="static/images/iconmonstr_png/iconmonstr-linkedin-1-240.png"></a></div>
+                <div class="twitter" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000"
+                data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center"><a href="https://twitter.com/samirngle"><img src="static/images/iconmonstr_png/iconmonstr-twitter-1-240.png"></a></div>
             </div>
         </nav>
 
-    </div>
 
-
-    <div class="home" id="home">
-        <div class="home_text">
-            <main>
-            </main>
+        <div class="home" id="home" data-aos="fade-in" data-aos-delay="200" data-aos-duration="900" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-anchor-placement="top-center">
+            <h1>Samir Ingle</h1>
+            <div class="home_text">
+                <main>
+                </main>
+            </div>
         </div>
-    </div>
 
     </div>
 
@@ -129,7 +131,7 @@
         function StartTextAnimation(i) {
             if (typeof dataText[i] == 'undefined') {
                 setTimeout(function () {
-                    StartTextAnimation(0);
+                    StartTextAnimation(100);
                 }, 10000);
             }
             // check if dataText[i] exists

@@ -37,6 +37,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
 }
 
 .name > a {
@@ -54,8 +55,8 @@ nav {
 
 .links {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: baseline;
 }
 
 .links > div {  
@@ -89,6 +90,7 @@ height: auto;
 .links > div > a > img:hover {
     color: rgb(0, 0, 0);
     opacity: 1.0;
+    transform: scale(1.1);
 }
 
 
@@ -107,6 +109,7 @@ height: auto;
 
 .pages_text > a:hover {
     color: black;
+    transform: scale(1.1);
 }
 
 
@@ -114,24 +117,26 @@ height: auto;
 }
 
 .home_text {
-    margin-right: 10%;
+    margin-left: 10%;
 }
 
 .home {
     display: flex;
-    justify-content: flex-end;
-    text-align: right;
-    align-items: center;
-    font-size: 4em;
-    border: 3px solid;
-    margin-right: 20%;
-
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 6em;
+    padding-top: 350px;
     height: 100vh;
-    width: calc(100vw - 40px);
+    width: 100vw;
 
 
 }
 
+h1 {
+    margin-bottom: 10px;
+    margin-left: 10%;
+}
 
 .work_page {
     font-size: 3em;
