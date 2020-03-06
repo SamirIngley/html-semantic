@@ -3,8 +3,11 @@
 body {
     display: block;
     background-color: rgb(252, 233, 206);
+    width: calc(100vw - 40px);
     font-family: nimbus-sans,Helvetica,Arial, Helvetica, sans-serif;
     margin: 20px;
+    overflow-x: hidden;
+
 }
 
 .scroll-parent {
@@ -129,7 +132,7 @@ height: auto;
     align-items: flex-start;
     padding-top: 350px;
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 h1 {
@@ -183,21 +186,30 @@ main {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     body {
-        width: 50%
+        /* width: 50%; */
+    }
+
+    main {
+        word-break: break-word;
     }
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     body {
-        width: 50%
+        /* width: 50%; */
+        font-size: 1em;
     }
+
+    
 } 
+
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     body {
-        width: 80%
+        /* width: 50%; */
     }
 } 
 
